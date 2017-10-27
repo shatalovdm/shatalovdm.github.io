@@ -95,7 +95,8 @@ h3 {
   animation: bounce infinite 2s;
 }
 .skills {
-  height: 400px;
+  height: inherit;
+  padding: 40px;
   background-color: white;
   display: -webkit-box;
   display: -moz-box;
@@ -105,10 +106,12 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .skill {
+  margin: 20px;
   text-align: center;
-  color: #adbfce;
+  color: #52687a;
   max-width: 250px;
 }
 .skill .fa {
@@ -116,11 +119,12 @@ h3 {
   width: 150px;
   margin-bottom: 20px;
   line-height: 150px;
-  border: 2px solid #adbfce;
+  border: 2px solid #52687a;
   border-radius: 50%;
 }
 .projects {
-  height: 800px;
+  height: inherit;
+  padding: 40px;
   color: white;
   background-color: #adbfce;
   display: -webkit-box;
@@ -133,6 +137,7 @@ h3 {
   align-items: center;
 }
 .projects-list {
+  margin: 30px 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -154,7 +159,7 @@ h3 {
   color: #52687a;
   height: 320px;
   width: 400px;
-  margin: 10px;
+  margin: 10px 5px;
   text-align: center;
   border-radius: 15px;
   background-color: white;
@@ -237,6 +242,46 @@ footer {
   line-height: 40px;
   text-align: center;
   color: white;
+}
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .page-container {
+    background-size: 100% 100vh;
+  }
+  .home-header {
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .home-header li {
+    padding-right: 20px;
+  }
+  .home-footer {
+    justify-content: center;
+    padding: 0;
+  }
+  .project {
+    height: 300px;
+    width: 320px;
+  }
+  .project img {
+    width: 320px;
+    height: 160px;
+  }
+  .contact .fa {
+    font-size: 40px;
+  }
 }
 
 @keyframes bounce {
