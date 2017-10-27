@@ -1,0 +1,252 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.page-container {
+  background: rgba(140,250,241,1);
+  background: -moz-linear-gradient(-45deg, rgba(140,250,241,1) 0%, rgba(93,164,240,1) 50%, rgba(108,102,189,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(140,250,241,1)), color-stop(50%, rgba(93,164,240,1)), color-stop(100%, rgba(108,102,189,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(140,250,241,1) 0%, rgba(93,164,240,1) 50%, rgba(108,102,189,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(140,250,241,1) 0%, rgba(93,164,240,1) 50%, rgba(108,102,189,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(140,250,241,1) 0%, rgba(93,164,240,1) 50%, rgba(108,102,189,1) 100%);
+  background: linear-gradient(135deg, rgba(140,250,241,1) 0%, rgba(93,164,240,1) 50%, rgba(108,102,189,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cfaf1', endColorstr='#6c66bd', GradientType=1 );
+}
+.home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.home-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  height: 150px;
+  padding: 20px 40px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  flex-basis: 10%;
+}
+.home-header ul {
+  list-style-type: none;
+}
+.home-header li {
+  cursor: pointer;
+  display: inline-block;
+  padding-right: 40px;
+}
+.home-title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: large;
+  flex-basis: 60%;
+}
+.home-footer {
+  padding-right: 80px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 20%;
+}
+.home-footer i {
+  cursor: pointer;
+  animation: bounce infinite 2s;
+}
+.skills {
+  height: 400px;
+  background-color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skill {
+  text-align: center;
+  color: #adbfce;
+  max-width: 250px;
+}
+.skill .fa {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+  line-height: 150px;
+  border: 2px solid #adbfce;
+  border-radius: 50%;
+}
+.projects {
+  height: 800px;
+  color: white;
+  background-color: #adbfce;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.projects-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  color: #52687a;
+  height: 320px;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.31);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.31);
+  box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.31);
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -ms-transition:0.5s all;
+  transition:0.5s all;
+}
+.project:hover {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.31);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.31);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.31);
+}
+/*.project img {
+  height: 200px;
+  width: 400px;
+}*/
+.project-btn {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: rgba(108,102,189,1);
+  line-height: 30px;
+  width: 70px;
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.31);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.31);
+  box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.31);
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -ms-transition:0.5s all;
+  transition:0.5s all;
+}
+.project-btn:hover {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.31);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.31);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.31);
+}
+.project-btn a {
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+.contact {
+  height: 250px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #52687a;
+  background-color: white;
+}
+.contact .fa {
+  color: #52687a;
+  padding: 0 15px;
+}
+.contact .fa-facebook:hover {
+  color: #3b5999;
+}
+.contact .fa-github:hover {
+  color: black;
+}
+.contact .fa-linkedin:hover {
+  color: #0077B5;
+}
+.contact .fa-twitter:hover {
+  color: #55acee;
+}
+.contact .fa-envelope:hover {
+  color: rgba(108,102,189,1);
+}
+footer {
+  line-height: 40px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform:translateY(0);
+  }
+  40% {
+    transform:translateY(-30px);
+  }
+  60% {
+    transform:translateY(-15px);
+  }
+}
