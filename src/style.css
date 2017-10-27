@@ -96,7 +96,7 @@ h3 {
 }
 .skills {
   height: inherit;
-  padding: 40px;
+  padding: 60px 0;
   background-color: white;
   display: -webkit-box;
   display: -moz-box;
